@@ -1,5 +1,5 @@
 ---
-title: "SuperHOT"
+title: "Extending the Context Window of LLMs"
 categories: Large Language Models
 date: 07-07-2023
 ---
@@ -38,4 +38,4 @@ Transformers do not learn how to gauge position based on the relative distance o
 * Rotary positional embedding to loop the positions around after crossing the max context length (e.g., 2048): `position_ids = position_ids % 2048`
 * Block repeated positions: repeating the chosen frequency for a block of positions, so [1, 2, 3, 4, 5, ..., L] becomes [1, 1, 1, 1, 2, 2, 2, 2, 3, ..., L]. This is achieved by changing the frequency update: `t *= 1/4`.
 
-This one-liner can be deceptive as 
+In other words, several tokens (4 in this example) are assigned to the same position. This (surprising) scheme can quadruple the context length with minimal performance degradation (~2%). More information about it in this paper from Meta: https://arxiv.org/abs/2306.15595
