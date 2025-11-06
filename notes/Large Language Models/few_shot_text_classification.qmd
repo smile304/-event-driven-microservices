@@ -1,11 +1,7 @@
 ---
 title: "Report – Few-Shot Text Classification"
 categories: Large Language Models
-date: 01-01-2020
 ---
-
-📝 **Article**: [https://few-shot-text-classification.fastforwardlabs.com/](https://few-shot-text-classification.fastforwardlabs.com/) (2020)
-
 ## Embedding models
 
 * **Static**: Bag-of-words and tf-idf vectors
