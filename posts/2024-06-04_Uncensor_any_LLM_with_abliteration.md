@@ -10,13 +10,9 @@ title: "Uncensor any LLM with abliteration"
 subtitle: "Fine-tuning without retraining"
 ---
 
-![](https://i.imgur.com/KhorYYG.png)
-
 The third generation of Llama models provided fine-tunes (Instruct) versions that excel in understanding and following instructions. However, these models are heavily censored, designed to refuse requests seen as harmful with responses such as "As an AI assistant, I cannot help you." While this safety feature is crucial for preventing misuse, it limits the model's flexibility and responsiveness.
 
 In this article, we will explore a technique called "abliteration" that can uncensor any LLM without retraining. This technique effectively removes the model's built-in refusal mechanism, allowing it to respond to all types of prompts.
-
-The code is available on [Google Colab](https://colab.research.google.com/drive/1VYm3hOcvCpbGiqKZb141gJwjdmmCcVpR?usp=sharing) and in the [LLM Course](https://github.com/mlabonne/llm-course) on GitHub.
 
 ## ✂️ What is abliteration?
 
